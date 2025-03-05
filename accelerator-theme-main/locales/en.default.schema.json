@@ -129,7 +129,10 @@
               "label": "Heading"
             }
           }
-        }
+        },
+        "model_info": {
+          "name": "Model Information"
+        },
       }
     },
     "image-with-text": {

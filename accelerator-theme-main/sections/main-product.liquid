@@ -222,6 +222,20 @@
                 </div>
               {%- endform -%}
             </product-form>
+
+            {%- when 'model_info' -%}
+              <div {{ block.shopify_attributes }}>
+                <p>{{ product.metafields.models.model_info.value.model_info_name.value }} is {{ product.metafields.models.model_info.value.model_info_height | metafield_text }}
+                  and wearing size {{ product.metafields.model.wearing_size.value }}.
+                </p>
+                <p>{{ product.metafields.models.model_info.value.model_info_name.value  }}'s measurements: </p>
+                <ul>
+                  <li>Bust: {{ product.metafields.models.model_info.value.model_info_bust | metafield_text }}</li>
+                  <li>Waist: {{ product.metafields.models.model_info.value.model_info_waist | metafield_text }}</li>
+                  <li>Hips: {{ product.metafields.models.model_info.value.model_info_hips | metafield_text }}</li>
+                </ul>
+              </div>
+            
           {%- when 'description' -%}
             {%- unless product.description == blank -%}
               <div {{ block.shopify_attributes }}>

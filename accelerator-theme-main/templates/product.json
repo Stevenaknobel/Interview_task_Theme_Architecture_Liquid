@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_XMmTnk": {
-          "type": "text",
-          "settings": {
-            "text": "Text block{{ product.metafields.models.model_info.value.model_info_name.value }} is {{ product.metafields.models.model_info.value.model_info_height | metafield_text }} and wearing size {{ product.metafields.model.wearing_size.value }}. {{ product.metafields.models.model_info.value.model_info_name.value }}'s measurements: Bust: {{ product.metafields.models.model_info.value.model_info_bust | metafield_text }} Waist: {{ product.metafields.models.model_info.value.model_info_waist | metafield_text }} Hips: {{ product.metafields.models.model_info.value.model_info_hips | metafield_text }}"
-          }
-        },
         "vendor": {
           "type": "text",
           "settings": {
