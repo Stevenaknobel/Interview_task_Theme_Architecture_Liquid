@@ -7,7 +7,6 @@
           "type": "text",
           "settings": {
             "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
           }
         },
         "title": {

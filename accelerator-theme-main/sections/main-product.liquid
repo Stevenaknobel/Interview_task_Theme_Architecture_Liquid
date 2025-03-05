@@ -59,7 +59,8 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-            <p {{ block.shopify_attributes }}>
+            <p class="uppercase" 
+            {{ block.shopify_attributes }}>
               {{ block.settings.text }}
             </p>
           {%- when 'title' -%}
